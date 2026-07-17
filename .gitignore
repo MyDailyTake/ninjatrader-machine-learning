@@ -1,0 +1,13 @@
+# NinjaTrader / VS build artifacts — never publish these
+bin/
+obj/
+*.dll
+*.pdb
+*.user
+*.suo
+.vs/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
