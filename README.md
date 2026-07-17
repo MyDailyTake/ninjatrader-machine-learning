@@ -61,15 +61,20 @@ and "here's the math, here's why it's wrong" is genuinely welcome. So is "here's
 
 ## Licensing — read this
 
-© 2026 MyDailyTake.com. **Free for personal use. Not for commercial use.**
-Licensed under **[PolyForm Noncommercial 1.0.0](LICENSE)**.
+© 2026 MyDailyTake.com. **All rights reserved.** See [LICENSE](LICENSE).
 
-In plain terms: **learn from it, run it on your own charts, modify it, tear it apart.** Don't
-repackage it into a product you sell.
+The source is published openly so you can **read it, learn from it, and run it on your own charts**.
+That's the point of the series. It is **not** placed in the public domain and **not** released under
+an open-source license.
 
-> To be precise about a word people argue over: PolyForm Noncommercial is **source available**, not
-> "open source" — the OSI definition doesn't permit a non-commercial restriction. The source is right
-> here and it's free for you to use and learn from. It just isn't a free pass to resell.
+**Not permitted:** commercial use or resale, redistribution or republication elsewhere, or removing
+the copyright notices from the files.
+
+**The notice at the top of each `.cs` is the authoritative statement of these terms** and governs
+that file.
+
+Want to use it commercially, or do something these terms don't cover? Just ask —
+[jack@mydailytake.com](mailto:jack@mydailytake.com).
 
 ## Disclaimer
 

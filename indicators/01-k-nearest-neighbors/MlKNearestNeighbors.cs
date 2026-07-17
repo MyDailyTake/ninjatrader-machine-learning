@@ -23,8 +23,6 @@ using NinjaTrader.NinjaScript.DrawingTools;
 
 // Write-up: https://mydailytake.com/ml-k-nearest-neighbors-indicator-for-ninjatrader-8/
 // Source: https://github.com/MyDailyTake/ninjatrader-machine-learning
-// © 2026 MyDailyTake.com — free for personal use, not for commercial use.
-// Licensed under PolyForm Noncommercial 1.0.0: https://polyformproject.org/licenses/noncommercial/1.0.0
 
 // MyDailyTake.com
 // Author: Jack <jack@mydailytake.com>

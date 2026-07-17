@@ -8,7 +8,7 @@ DLLs — it trains and predicts inside the indicator, on your bars.
 | **Full write-up** | [mydailytake.com](https://mydailytake.com/ml-random-forest-ninjatrader-8/) |
 | **Class** | `MlRandomForest` |
 | **Series** | Part 8 of 8 — [see all](../../README.md) |
-| **License** | **PolyForm Noncommercial 1.0.0** — free for personal use, not commercial. See [LICENSE](../../LICENSE). |
+| **License** | **All rights reserved** — read it, learn from it, run it on your own charts. Not for commercial use or redistribution. See [LICENSE](../../LICENSE). |
 | **Platform** | NinjaTrader 8 |
 
 ## What it does
@@ -43,9 +43,9 @@ NT8 version, instrument, bar type, and data provider. More in the [main README](
 
 ## Licensing
 
-© 2026 MyDailyTake.com. **Free for personal use — not for commercial use.** Licensed under
-[PolyForm Noncommercial 1.0.0](../../LICENSE). Learn from it, run it on your own charts, tear it
-apart. Don't repackage it into a product you sell.
+© 2026 MyDailyTake.com. **All rights reserved.** Published openly so you can read it, learn from it,
+and run it on your own charts — not for commercial use, resale, or redistribution. The notice at the
+top of the `.cs` governs. See [LICENSE](../../LICENSE). Want to do more? Ask: jack@mydailytake.com
 
 ## Disclaimer
 
