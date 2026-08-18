@@ -23,6 +23,7 @@ can read top to bottom.
 | 6 | [Recurrent Neural Network](indicators/06-recurrent-neural-network) | `MlNeuralNetRnn` | [Read](https://mydailytake.com/ml-recurrent-neural-network-ninjatrader-8/) |
 | 7 | [LSTM](indicators/07-lstm) | `MlNeuralNetLstm` | [Read](https://mydailytake.com/ml-lstm-neural-network-ninjatrader-8/) |
 | 8 | [Random Forest](indicators/08-random-forest) | `MlRandomForest` | [Read](https://mydailytake.com/ml-random-forest-ninjatrader-8/) |
+| 9 | [Gradient Boosting](indicators/09-gradient-boosting) | `MlGradientBoost` | [Read](https://mydailytake.com/ml-gradient-boosting-ninjatrader-8/) |
 
 Read them in order if you're learning. Parts 2–7 are one continuous thread: a single neuron becomes a
 hidden layer, becomes depth, gets a better optimizer, gains memory, then gates that memory.

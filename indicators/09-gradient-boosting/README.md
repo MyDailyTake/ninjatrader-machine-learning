@@ -1,36 +1,36 @@
-# Part 7 — Long Short-Term Memory (LSTM): Gated Memory
+# Part 9 — Gradient Boosting: The Algorithm Behind XGBoost
 
 Machine learning in native NinjaScript for **NinjaTrader 8**. No Python, no external libraries, no
 DLLs — it trains and predicts inside the indicator, on your bars.
 
 | | |
 |---|---|
-| **Full write-up** | [mydailytake.com](https://mydailytake.com/ml-lstm-neural-network-ninjatrader-8/) |
-| **Class** | `MlNeuralNetLstm` |
-| **Series** | Part 7 of 9 — [see all](../../README.md) |
+| **Full write-up** | [mydailytake.com](https://mydailytake.com/ml-gradient-boosting-ninjatrader-8/) |
+| **Class** | `MlGradientBoost` |
+| **Series** | Part 9 of 9 — [see all](../../README.md) |
 | **License** | **All rights reserved** — read it, learn from it, run it on your own charts. Not for commercial use or redistribution. See [LICENSE](../../LICENSE). |
 | **Platform** | NinjaTrader 8 |
 
 ## What it does
 
-The previous post built a vanilla Recurrent Neural Network — a model with a hidden state that carries forward bar to bar — and then ran straight into its defining limitation. Training a recurrent network means multiplying the gradient by a tanh derivative at every step back through time, and a long chain of numbers below one collapses toward zero.
+The previous post built a Random Forest — many decision trees, each grown independently on its own slice of the data, their votes averaged. Gradient boosting takes the opposite approach: it grows trees **in sequence**, each one correcting the errors the ensemble has made so far. It's the algorithm behind XGBoost.
 
-[Read the full write-up →](https://mydailytake.com/ml-lstm-neural-network-ninjatrader-8/)
+[Read the full write-up →](https://mydailytake.com/ml-gradient-boosting-ninjatrader-8/)
 
 ## Install
 
-1. Download **[`MlNeuralNetLstm.cs`](MlNeuralNetLstm.cs)**.
+1. Download **[`MlGradientBoost.cs`](MlGradientBoost.cs)**.
 2. Copy it to `Documents\NinjaTrader 8\bin\Custom\Indicators\`.
 3. In NinjaTrader: **Control Center → New → NinjaScript Editor**, press **F5** to compile.
-4. Add **MlNeuralNetLstm** to a chart.
+4. Add **MlGradientBoost** to a chart.
 
 ## Settings
 
 | Group | Setting | Description |
 |---|---|---|
-| Architecture | **Architecture** | Number of neurons in the LSTM hidden layer. Each bar updates an H-dimensional hidden-state vector AND an H-dimensional cell-state vector that both persist across bars. Larger H = more memory capacity but more parameters — the LSTM has four gates, so roughly 4x the weights of a vanilla RNN of the same size. Default 8. |
-| Learning | **Learning** | Step size for each weight update. LSTM training is sensitive to learning rate because gradients compound across the BPTT window and four gates. Start at 0.005 and lower it first if training is unstable. |
-| Features | **Features** | Period of the moving average used in the distFromMa feature, and used as the smoothing window for the ATR regime ratio. |
+| Boosting | **Boosting** | Number of trees grown in sequence and the learning rate that shrinks each tree's contribution to the ensemble. |
+| Features | **Features** | Period of the moving average used in the distFromMa feature, and the smoothing window for the ATR regime ratio. |
+| Learning | **Learning** | Number of recent look-ahead-safe (feature, label) examples kept in the rolling training window each rebuild draws from. |
 | Signal | **Signal** | How far the predicted probability of an up move must be from 0.5 before a signal fires. |
 | Display | **Display** | Vertical offset of the signal triangle from the bar's high (shorts) / low (longs), in ticks. |
 
@@ -54,4 +54,4 @@ is not a trading edge. Futures trading involves substantial risk of loss and is 
 every investor. See the [full disclosure](https://mydailytake.com/disclosure/).
 
 ---
-← [Part 6](../06-recurrent-neural-network) · [Part 8](../08-random-forest) →
+← [Part 8](../08-random-forest)

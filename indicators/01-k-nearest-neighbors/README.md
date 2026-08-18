@@ -7,7 +7,7 @@ DLLs — it trains and predicts inside the indicator, on your bars.
 |---|---|
 | **Full write-up** | [mydailytake.com](https://mydailytake.com/ml-k-nearest-neighbors-indicator-for-ninjatrader-8/) |
 | **Class** | `MlKNearestNeighbors` |
-| **Series** | Part 1 of 8 — [see all](../../README.md) |
+| **Series** | Part 1 of 9 — [see all](../../README.md) |
 | **License** | **All rights reserved** — read it, learn from it, run it on your own charts. Not for commercial use or redistribution. See [LICENSE](../../LICENSE). |
 | **Platform** | NinjaTrader 8 |
 
